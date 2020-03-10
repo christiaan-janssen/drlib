@@ -9,8 +9,10 @@ class Point
     @y = y
   end
 
-  def distance_to(other)
-    raise NotImplementedError
+  def distance_to(p2)
+    a = p2.x - @x
+    b = p2.y - @y
+    Math.sqrt ((a ** 2) + (b ** 2))
   end
 end
 

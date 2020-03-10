@@ -8,4 +8,3 @@ drlib is a library with basic functions for use in [[DragonRuby][https://dragonr
 - Point
 - Rect
 
-
