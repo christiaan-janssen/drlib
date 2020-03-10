@@ -2,9 +2,37 @@
 =drlib is a work in progress, no warrenty is given :)=
 
 ** What is drlib
-drlib is a library with basic functions for use in [[DragonRuby][https://dragonruby.itch.io/]]. 
+drlib is a library with basic functions for use in [[https://dragonruby.itch.io/][DragonRuby]]. 
 
 ** Functions
 - Point
 - Rect
 
+** Usage
+#+BEGIN_SRC Ruby
+# A point consists of an x and y coordinate:
+p1 = Point.new(3, 2)
+p2 = Point.new(9, 7)
+
+# you can use to points to calculate the distance beween
+# the two of them
+p1.distance_to(p2) # => 7.2102
+
+
+# A rectangle consists of 2 points, top left and bottom right:
+r1 = Rect.new(100, 100, 300, 300)
+r2 = REct.new(200, 200, 400, 400)
+
+# You can check if rectangles intersect:
+r1.intersects?(r2) # => true
+
+# when you create a rectangle it generates a random color
+# for itself. You can change that by changing the r, g, and b 
+# variables
+
+# A rectangle has a function to display itself in DragonRuby,
+# please not that it is better to use sprites for graphics
+
+args.outputs.solids << r1.solid
+
+#+END_SRC
