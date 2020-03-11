@@ -36,3 +36,10 @@ r1.intersects?(r2) # => true
 args.outputs.solids << r1.solid
 
 #+END_SRC
+
+** Thanks
+This project would not be possible without the help of other developers and the Dragonruby Community.
+
+Special thanks to
+- amirrajan
+- skryking
